@@ -14,6 +14,11 @@ end
 
 def sum_to_n? arr, n
   # YOUR CODE HERE
+  a = arr.combination(2).map{ |x| sum x }.index n
+  if a == nil then
+    return false
+  end
+  return true
 end
 
 # Part 2
